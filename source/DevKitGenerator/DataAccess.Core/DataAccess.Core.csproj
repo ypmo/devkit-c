@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\DataAccess.PRODML\IProdmlDataObject.cs" Link="PRODML\IProdmlDataObject.cs" />
+    <Compile Include="..\DataAccess.PRODML\PRODML210\DataObjects.cs" Link="PRODML\210\DataObjects.cs" />
+    <Compile Include="..\DataAccess.RESQML\IResqmlDataObject.cs" Link="RESQML\IResqmlDataObject.cs" />
+    <Compile Include="..\DataAccess.RESQML\RESQML210\DataObjects.cs" Link="RESQML\210\DataObjects.cs" />
+    <Compile Include="..\DataAccess.WITSML\IWitsmlDataObject.cs" Link="WITSML\IWitsmlDataObject.cs" />
+    <Compile Include="..\DataAccess.WITSML\WITSML200\DataObjects.cs" Link="WITSML\200\DataObjects.cs" />
+    <Compile Include="..\DataAccess\ExtensibleEnum.cs" Link="ExtensibleEnum.cs" />
+    <Compile Include="..\DataAccess\IDataObject.cs" Link="IDataObject.cs" />
+    <Compile Include="..\DataAccess\Reflection\EnergisticsDataObjectAttribute.cs" Link="Reflection\EnergisticsDataObjectAttribute.cs" />
+    <Compile Include="..\DataAccess\Reflection\EnergisticsDataTypeAttribute.cs" Link="Reflection\EnergisticsDataTypeAttribute.cs" />
+    <Compile Include="..\DataAccess\Reflection\StandardFamily.cs" Link="Reflection\StandardFamily.cs" />
+    <Compile Include="..\DataAccess\Timestamp.cs" Link="Timestamp.cs" />
+    <Compile Include="..\DataAccess\Validation\ComponentElementAttribute.cs" Link="Validation\ComponentElementAttribute.cs" />
+    <Compile Include="..\DataAccess\Validation\DataObjectValidator.cs" Link="Validation\DataObjectValidator.cs" />
+    <Compile Include="..\DataAccess\Validation\RecurringElementAttribute.cs" Link="Validation\RecurringElementAttribute.cs" />
+    <Compile Include="..\DataAccess\Validation\WitsmlValidationResult.cs" Link="Validation\WitsmlValidationResult.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="RESQML\210\" />
+    <Folder Include="Validation\" />
+    <Folder Include="Reflection\" />
+    <Folder Include="PRODML\210\" />
+    <Folder Include="WITSML\200\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
