@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Energistics.DataAccess</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\DataAccess.PRODML\IProdmlDataObject.cs" Link="PRODML\IProdmlDataObject.cs" />
-    <Compile Include="..\DataAccess.PRODML\PRODML210\DataObjects.cs" Link="PRODML\210\DataObjects.cs" />
-    <Compile Include="..\DataAccess.RESQML\IResqmlDataObject.cs" Link="RESQML\IResqmlDataObject.cs" />
-    <Compile Include="..\DataAccess.RESQML\RESQML210\DataObjects.cs" Link="RESQML\210\DataObjects.cs" />
+    <Compile Include="..\DataAccess.PRODML\IProdmlDataObject.cs" Link="IProdmlDataObject.cs" />
+    <Compile Include="..\DataAccess.RESQML\IResqmlDataObject.cs" Link="IResqmlDataObject.cs" />
+    <Compile Include="..\DataAccess.RESQML\RESQML210\DataObjects.cs" Link="RESQML210\DataObjects.cs" />
     <Compile Include="..\DataAccess.WITSML\IWitsmlDataObject.cs" Link="WITSML\IWitsmlDataObject.cs" />
     <Compile Include="..\DataAccess.WITSML\WITSML200\DataObjects.cs" Link="WITSML\200\DataObjects.cs" />
     <Compile Include="..\DataAccess\ExtensibleEnum.cs" Link="ExtensibleEnum.cs" />
@@ -24,10 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="RESQML\210\" />
     <Folder Include="Validation\" />
     <Folder Include="Reflection\" />
-    <Folder Include="PRODML\210\" />
     <Folder Include="WITSML\200\" />
   </ItemGroup>
 
